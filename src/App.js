@@ -9,11 +9,11 @@ import CreateUser from './pages/CreateUser/CreateUser.js';
 function App() {
   return (
     <div className="App">
-        <Router basename="/login-react">
+        <Router>
         <Switch>
-          <Route exact path="/" element={<Login />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/create-user" element={<CreateUser />} />
+          <Route exact path="/login-react/" component={Login} />
+          <Route path="/login-react/home" component={Home} />
+          <Route path="/login-react/create-user" component={CreateUser} />
         </Switch>
       </Router>
     </div>
